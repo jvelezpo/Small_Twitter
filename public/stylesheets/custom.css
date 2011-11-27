@@ -1,9 +1,9 @@
 .container{
-	width: 710px;
+	width: 1000px;
 }
 
 body {
-	background: #cff;
+	background: #e6e6e6;
 }
 
 header {
@@ -47,8 +47,9 @@ a:visited {
 nav {
 	float: right;
 	background: white;
-	padding: 0 0.7em;
+	padding: 10;
 	white-space: nowrap;
+	font-size: 14px;
 }
 
 nav ul {
@@ -56,10 +57,31 @@ nav ul {
 	padding: 0;
 }
 
+.user-nav {
+	-webkit-border-radius: 0px 0px 8px 8px;
+	-moz-border-radius: 0px 0px 8px 8px;
+	-ms-border-radius: 0px 0px 8px 8px;
+	-o-border-radius: 0px 0px 8px 8px;
+	border-radius: 0px 0px 8px 8px;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+	-ms-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+	background-color: white;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, white, #e6e6e6);
+	background-image: -moz-linear-gradient(top, white, #e6e6e6);
+	background-image: -ms-linear-gradient(top, white, #e6e6e6);
+	background-image: -o-linear-gradient(top, white, #e6e6e6);
+	background-image: linear-gradient(top, white, #e6e6e6);
+}
+
 nav ul li {
 	list-style-type: none;
 	display: inline-block;
-	padding: 0.8em 0;
+	padding: 0.8em 8px;
+	margin: 0px 10px 0px;
 }
 
 nav ul li a {
@@ -103,7 +125,7 @@ a.singup_button {
 footer {
 	text-align: center;
 	margin-top: 10px;
-	width: 710px;
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
