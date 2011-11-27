@@ -133,3 +133,20 @@ footer {
 footer nav {
 	float: none;
 }
+
+/* Facebook*/
+iframe {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	border:none; 
+	width:450px; 
+	height:80px
+}
+
+
+
+
+
+
+
