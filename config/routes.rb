@@ -4,6 +4,7 @@ App::Application.routes.draw do
   match '/contact', :to => 'pages#contact'
   match '/about', :to => 'pages#about'
   match '/help', :to => 'pages#help'
+  match '/musica', :to => 'pages#musica'
   
   match '/singup', :to => 'users#new'
   
