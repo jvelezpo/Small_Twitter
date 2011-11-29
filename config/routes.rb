@@ -7,6 +7,7 @@ App::Application.routes.draw do
   match '/about', :to => 'pages#about'
   match '/help', :to => 'pages#help'
   match '/musica', :to => 'pages#musica'
+  match '/news', :to => "pages#news"
   
   match '/singup', :to => 'users#new'
   

@@ -19,4 +19,8 @@ class PagesController < ApplicationController
   def musica
   	@title = "Musica"	
   end
+  
+  def newa
+  	@title = "News"
+  end
 end
