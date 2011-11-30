@@ -4,3 +4,11 @@ function prueba(string){
 	alert("El id: " + fomularioJ.pruebita.options[fomularioJ.pruebita.selectedIndex].id);
 }
 
+function prueba1(){
+	
+	return fomularioJ.pruebita.options[fomularioJ.pruebita.selectedIndex].value;
+}
+
+function prueba2(string){
+	alert(string );
+}

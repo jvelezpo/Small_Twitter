@@ -14,7 +14,11 @@ module ApplicationHelper
 		image_tag("rails.png", :alt => "Sample app", :class => "round")
 	end
 	
-	def hola
-		"holita"
+	def holaA (j)
+		j + "f"
+	end
+	
+	def holaAA
+		"g"
 	end
 end

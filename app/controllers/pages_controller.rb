@@ -20,7 +20,12 @@ class PagesController < ApplicationController
   	@title = "Musica"	
   end
   
-  def newa
+  def news
   	@title = "News"
+  	@hola = hola
+  end
+  
+  def hola
+  	"Jasinto jose"
   end
 end

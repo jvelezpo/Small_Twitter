@@ -8,17 +8,18 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <h1>El javascript</h1>
-<form name="fomularioJ"> 
+<form name="fomularioJ" >
 	<select name="pruebita"> 
 		<option id="1" value="oelo">Oelo</option>
 		<option id="2" value="Ramirito">Ramirito</option>
 		<option id="3" value="Mateo">Mateo</option>
 	</select>
 </form>
-<input type="button" value="tonces?" onclick="prueba('<%= hola %>')"> 
+
+<input type="button" value="tonces?" onclick="prueba2('<%= holaA( $prueba1() ) %>')"> 
 
 <p>&nbsp;</p>
-<p><%= hola %></p>
+
 <center>
 	<div class="fb-comments" data-href="http://lomio.heroku.com/news" data-num-posts="10" data-width="500"></div>
 </center>
