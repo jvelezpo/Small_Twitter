@@ -13,4 +13,8 @@ module ApplicationHelper
 	def logo
 		image_tag("rails.png", :alt => "Sample app", :class => "round")
 	end
+	
+	def hola
+		"holita"
+	end
 end
