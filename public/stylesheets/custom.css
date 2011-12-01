@@ -160,7 +160,14 @@ td.sidebar{
 	width: 30%;
 	padding: 1em;
 	vertical-align: top;
-	background: #ffc;
+	
+	background-color: white;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe), to(#ffa));
+	background-image: -webkit-linear-gradient(top, #ffe, #ffa);
+	background-image: -moz-linear-gradient(top, #ffe, #ffa);
+	background-image: -ms-linear-gradient(top, #ffe, #ffa);
+	background-image: -o-linear-gradient(top, #ffe, #ffa);
+	background-image: linear-gradient(top, #ffe, #ffa);
 }
 
 .profile img.gravatar {
