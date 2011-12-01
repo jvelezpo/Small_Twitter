@@ -1,0 +1,20 @@
+
+
+function oe(){
+	var id = fomularioJ.pruebita.options[fomularioJ.pruebita.selectedIndex].id;
+	<% 
+		@usuarios = User.find(:all)
+		for algo in @usuarios
+	-%>
+		if(id == <%= algo.id %>){
+			alert("El id: <%= algo.id %>, el nombre <%= algo.name %>, el correo: <%= algo.email %>, el password: <%= algo.encrypted_password %>");
+		}
+	
+	<% end -%>
+	
+}
+
+function ooe(){
+	var id = fomularioJ.pruebita.options[fomularioJ.pruebita.selectedIndex].id;
+	alert("<%= raw(User.find(id).name) %>");
+}

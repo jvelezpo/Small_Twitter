@@ -22,10 +22,6 @@ class PagesController < ApplicationController
   
   def news
   	@title = "News"
-  	@hola = hola
   end
   
-  def hola
-  	"Jasinto jose"
-  end
 end

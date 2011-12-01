@@ -9,6 +9,6 @@ function prueba1(){
 	return fomularioJ.pruebita.options[fomularioJ.pruebita.selectedIndex].value;
 }
 
-function prueba2(string){
-	alert(string );
+function prueba2(){
+	alert("prueba 2" );
 }

@@ -1,6 +1,7 @@
-App::Application.routes.draw do
+App::Application.routes.draw do |map|
   resources :users
-	
+  map.connect ':controller/:action.:format'
+
   root :to => "pages#home"
 
   match '/contact', :to => 'pages#contact'

@@ -14,11 +14,7 @@ module ApplicationHelper
 		image_tag("rails.png", :alt => "Sample app", :class => "round")
 	end
 	
-	def holaA (j)
-		j + "f"
-	end
-	
-	def holaAA
-		"g"
+	def javascript(*files)
+		content_for(:head) { javascript_include_tag(*files) }
 	end
 end
