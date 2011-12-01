@@ -175,9 +175,11 @@ td.sidebar{
 	margin-bottom: -15px;
 }
 
+/* Singup */
 
-
-
+div.field, div.actions {
+	margin-bottom: 10px;
+}
 
 
 
