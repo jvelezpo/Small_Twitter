@@ -181,6 +181,59 @@ div.field, div.actions {
 	margin-bottom: 10px;
 }
 
+/* Error messages */
+
+.field_with_errors {
+  color: red;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 1px solid red;
+  padding: 7px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
+  background-image: -moz-linear-gradient(top, white, #e6e6e6);
+  background-image: -ms-linear-gradient(top, white, #e6e6e6);
+  background-image: -o-linear-gradient(top, white, #e6e6e6);
+  background-image: linear-gradient(top, white, #e6e6e6);
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(red));
+  background-image: -webkit-linear-gradient(top, white, red);
+  background-image: -moz-linear-gradient(top, white, red);
+  background-image: -ms-linear-gradient(top, white, red);
+  background-image: -o-linear-gradient(top, white, red);
+  background-image: linear-gradient(top, white, red);
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+
+
+
+
+
 
 
 
