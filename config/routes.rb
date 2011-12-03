@@ -1,5 +1,8 @@
 App::Application.routes.draw do |map|
+
   resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
+  
   map.connect ':controller/:action.:format'
 
   root :to => "pages#home"
@@ -11,6 +14,9 @@ App::Application.routes.draw do |map|
   match '/news', :to => "pages#news"
   
   match '/singup', :to => 'users#new'
+  
+  match '/singin', :to => 'sessions#new'
+  match '/singout', :to => 'sessions#destroy'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

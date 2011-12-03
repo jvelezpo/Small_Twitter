@@ -1,0 +1,16 @@
+<h1>Sing in</h1>
+
+<%= form_for(:session, :url => sessions_path) do |f| %>
+	<div class="field">
+		<%= f.label :name %> <br />
+		<%= f.text_field :name %>
+	</div>
+	<div class="field">
+		<%= f.label :password %> <br />
+		<%= f.password_field :password %>
+	</div>
+	<div class="actions">
+		<%= f.submit "Sing In" %> <br />
+	</div>
+<% end %>
+<p>New user?  <%= link_to "Sing up now", singup_path %></p>
