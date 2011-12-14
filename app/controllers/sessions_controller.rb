@@ -20,14 +20,6 @@ class SessionsController < ApplicationController
   	sing_out
   	redirect_to root_path
   end
-
-  
-
-
-
-
-
-
 end
 
 
