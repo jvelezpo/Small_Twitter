@@ -15,6 +15,12 @@ header img {
 	background: #fff;
 }
 
+header img.gravatar {
+	width: 25px;
+	background: none;
+	padding: 0px;
+}
+
 section {
 	margin-top: 1em;
 	font-size: 120%;
@@ -80,12 +86,12 @@ nav ul {
 nav ul li {
 	list-style-type: none;
 	display: inline-block;
-	padding: 0.7em 0px;
-	margin: 0px 10px 0px;
+	padding: 0.3em 0px;
+	margin: 0px 6px 4px;
 }
 
 nav ul li a {
-	padding: 0 5px;
+	padding: 0 0.5px;
 	font-weight: bold;
 }
 
