@@ -230,6 +230,15 @@ div.field, div.actions {
 }
 
 
+/* Links para listar todos los usuarios */
+ul.users {
+	margin-top: 1em;
+}
+
+ul.users li {
+	list-style: none;
+}
+
 
 
 
