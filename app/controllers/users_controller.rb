@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
+  before_filter :authenticate, :only => [:edit, :update]
+  before_filter :correct_user, :only => [:edit, :update]
+	
   def new
-  	@title = "Sing up"
+  	@title = "Sign up"
   	@user = User.new
   end
   
@@ -12,11 +15,11 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(params[:user])
   	if @user.save
-  		sing_in @user
+  		sign_in @user
   		flash[:success] = "Wellcome to the best WebApp ever! " + @user.name
   		redirect_to user_path(@user)
   	else
-  		@title = "Sing up"
+  		@title = "Sign up"
   		render 'new'
   	end	
   end
@@ -36,4 +39,30 @@ class UsersController < ApplicationController
   		render 'edit'
   	end
   end
+  
+  private
+  
+  def authenticate
+  	deny_access unless signed_in?
+  end
+
+  def correct_user
+  	@user = User.find(params[:id])
+  	redirect_to(current_user) unless current_user?(@user)
+  end  
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

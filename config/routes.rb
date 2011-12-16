@@ -13,10 +13,10 @@ App::Application.routes.draw do |map|
   match '/musica', :to => 'pages#musica'
   match '/news', :to => "pages#news"
   
-  match '/singup', :to => 'users#new'
+  match '/signup', :to => 'users#new'
   
-  match '/singin', :to => 'sessions#new'
-  match '/singout', :to => 'sessions#destroy'
+  match '/signin', :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

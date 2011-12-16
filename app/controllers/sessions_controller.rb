@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def new
-  	@title = "Sing in"
+  	@title = "Sign in"
   end
   
   def create
@@ -8,16 +8,16 @@ class SessionsController < ApplicationController
   							 params[:session][:password])
   	if user.nil?
   		flash.now[:error] = "Nada mono! email/password combination"
-  		@title = "Sing in"
+  		@title = "Sign in"
   		render 'new'
   	else		
-  		sing_in user
-  		redirect_to user_path(user)
+  		sign_in user
+  		redirect_back_or user
   	end	
   end
   	
   def destroy
-  	sing_out
+  	sign_out
   	redirect_to root_path
   end
 end

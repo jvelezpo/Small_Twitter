@@ -15,12 +15,6 @@ header img {
 	background: #fff;
 }
 
-header img.gravatar {
-	width: 25px;
-	background: none;
-	padding: 0px;
-}
-
 section {
 	margin-top: 1em;
 	font-size: 120%;
