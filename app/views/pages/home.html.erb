@@ -1,3 +1,17 @@
+<% if signed_in? %>
+   <table class="front" summary="For signed-in users">
+     <tr>
+       <td class="main">
+         <h1 class="micropost">What's up?</h1>
+         <%= render 'shared/micropost_form' %>
+       </td>
+       <td class="sidebar round">
+         <%= render 'shared/user_info' %>
+       </td>
+     </tr>
+   </table>
+<% else %>
+
 <h1>Sample app</h1>
 <p>Home page!!!!!! wii</p>
 <p>hola hola <%= "hola".reverse %> </p>
@@ -9,3 +23,5 @@
 
 
 <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fapps.facebook.com%2Frubyrrrrr%2F&amp;width=292&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;appId=232742566793589" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:258px;" allowTransparency="true"></iframe>
+
+<% end %>

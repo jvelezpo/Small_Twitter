@@ -243,24 +243,24 @@ ul.users li {
 h1.micropost{
     margin-bottom: 0.3em;
 }
-table.micropost{
+table.microposts{
     margin-top: 1em;
 }
-table.micropost tr {
+table.microposts tr {
     height: 70px;
 }
-table.micropost tr td.gravatar {
+table.microposts tr td.gravatar {
     border-top: 1px solid #ccc;
     vertical-align: top;
     width: 50px;
 }
 
-table.micropost tr td.micropost {
+table.microposts tr td.micropost {
     border-top: 1px solid #ccc;
     vertical-align: top;
     padding-top: 10px;
 }
-table.micropost tr td.micropost span.timestamp {
+table.microposts tr td.micropost span.timestamp {
     display: block;
     font-size: 85%;
     color: #666;
@@ -271,7 +271,7 @@ div.user_info img {
 div.user_info a {
     text-decoration: none;
 }
-div.user_info span.user-name {
+div.user_info span.user_name {
     position: absolute;
 }
 div.user_info span.micropost {

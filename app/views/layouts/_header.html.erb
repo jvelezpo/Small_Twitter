@@ -1,9 +1,5 @@
 <header>
-	<% if signed_in? %>
-  		<%= link_to logo, user_path(current_user) %>
-  	<% else %>
-  		<%= link_to logo, root_path %>
-  	<% end %>
+	<%= link_to logo, root_path %>
   	
   	<nav class="user-nav">
   		<ul>

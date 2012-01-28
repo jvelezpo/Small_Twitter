@@ -2,6 +2,7 @@ App::Application.routes.draw do |map|
 
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
+  resources :microposts, :only => [:create, :destroy]
   
   map.connect ':controller/:action.:format'
 
