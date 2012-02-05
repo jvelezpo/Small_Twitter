@@ -2,9 +2,9 @@
   <tr>
     <td class="main">
       <h1><%= @title %></h1>
-      <% if @user.any? %>
+      <% if @users.any? %>
         <ul class="user">
-          <%= render @user %>
+          <%= render @users %>
         </ul>
       <% end %>
     </td>
@@ -13,8 +13,8 @@
       <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
       <strong>Comentarios</strong> <%= @user.microposts.count %>
       <%= render 'shared/stats' %>
-      <% if @user.any? %>
-        <% @user.each do |user| %>
+      <% if @users.any? %>
+        <% @users.each do |user| %>
           <%= link_to gravatar_for(user, :size => 30), user %>
         <% end %>
       <% end %>
