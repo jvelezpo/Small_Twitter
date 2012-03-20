@@ -3,6 +3,10 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.7'
 gem 'gravatar_image_tag'
 
+#gem 'hpricot'
+#gem 'premailer-rails3'
+
+gem 'roadie'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
